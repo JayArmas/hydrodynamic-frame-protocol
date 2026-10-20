@@ -1,0 +1,34 @@
+{
+  "description": "Frozen diagnostic examples for paper-F6; exact decimal-free rationals; T0=1 is required by this example driver. Edit a copied driver for other EOS/normalizations. These are not exhaustive parameter scans.",
+  "T0": "1",
+  "mu0": "1/2",
+  "Lambda": "2",
+  "alpha_q": "2",
+  "beta": "1",
+  "v": "4/5",
+  "kz": "2/3",
+  "kperp": "1/2",
+  "cases": [
+    {
+      "name": "conformal_benchmark",
+      "ell": "0",
+      "eta": "1/5",
+      "zeta": "0",
+      "Dphys": "1/10"
+    },
+    {
+      "name": "nonconformal_unequal_vectors",
+      "ell": "1/7",
+      "eta": "1/5",
+      "zeta": "1/10",
+      "Dphys": "1/10"
+    },
+    {
+      "name": "conformal_zero_transport",
+      "ell": "0",
+      "eta": "0",
+      "zeta": "0",
+      "Dphys": "0"
+    }
+  ]
+}
