@@ -1,0 +1,10 @@
+{
+  "package_version": "1.0.0",
+  "source": "Paper/BDNKFrames.tex",
+  "source_role": "Final source supplied by the user; copied byte for byte, not independently certified in full.",
+  "manuscript_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+  "author_as_in_source": "Jay Armas",
+  "manuscript_title": "Stable and causal frames for BDNK hydrodynamics",
+  "snapshot_date": "2026-10-20",
+  "no_external_private_dependencies": true
+}
