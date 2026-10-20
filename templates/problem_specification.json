@@ -1,0 +1,23 @@
+{
+  "study_id": "REPLACE-system-family-version",
+  "status": "unresolved_gap",
+  "spacetime_dimension": null,
+  "background_and_equilibria": [],
+  "fields_and_units": {},
+  "original_equations": [],
+  "constraints_and_propagation": [],
+  "symmetries": [],
+  "EOS_and_exact_derivatives": {},
+  "thermodynamic_domain": [],
+  "prescribed_physical_transport": {},
+  "adjustable_frame_coefficients": {},
+  "nondissipative_physical_coefficients": {},
+  "requested_symmetry_limits": [],
+  "allowed_boundaries": [],
+  "sector_inventory": [],
+  "scope": {
+    "homogeneous_linear_spectral": true,
+    "nonlinear_claims": false
+  },
+  "source_hashes": {}
+}
