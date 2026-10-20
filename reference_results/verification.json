@@ -1,0 +1,855 @@
+{
+  "scope": "Selected exact identities plus three rational diagnostic examples; no new-system certificate",
+  "checks": {
+    "neutral_original_determinant": "0",
+    "RH_delta2": "0",
+    "RH_delta3": "0",
+    "RH_delta4": "0",
+    "neutral_relaxation_times_cubic": "0",
+    "neutral_relaxation_remainder": "0",
+    "ideal_sound_remainder_linear_s": "0",
+    "neutral_constant_q_obstruction": "0",
+    "thermodynamic_Jacobian": "0",
+    "thermodynamic_Xi": "0",
+    "charge_row_0": "0",
+    "charge_row_1": "0",
+    "charge_row_2": "0",
+    "charged_original_determinant": "0",
+    "charged_original_factor_remainder": "0",
+    "charged_original_full_remainder": "0",
+    "charged_bulk": "0",
+    "charged_conduction": "0",
+    "charged_vector": "0",
+    "auxiliary_bulk_shift": "0",
+    "direct_neutral_lab_gap": "0",
+    "imaginary_axis_identity": "0",
+    "charged_gap_cubic_RH": "0",
+    "negative_control_zero_minors": "0",
+    "negative_control_unstable_root": "0",
+    "zero_diffusion_degree_reduction": "0",
+    "F5_positive_R_margin": "0",
+    "F6_positive_L_decomposition": "0",
+    "three_function_original_determinant": "0",
+    "three_function_original_remainder": "0",
+    "three_function_charge_row_0": "0",
+    "three_function_charge_row_1": "0",
+    "three_function_charge_row_2": "0",
+    "three_function_entropy_bulk": "0",
+    "three_function_entropy_conduction": "0",
+    "three_function_entropy_vector": "0",
+    "eta_zero_original_cubic": "0",
+    "eta_zero_F3_original_cubic": "0",
+    "Gamma_zero_F3_retained_gap": "0",
+    "zero_diffusion_retained_relaxation": "0",
+    "original_charged_lab_gap_product": "0",
+    "original_charged_boosted_factorization": "0",
+    "neutral_relaxation_quotient": "0",
+    "neutral_relaxation_division_remainder": "0",
+    "charged_telegrapher_quotient": "0",
+    "charged_telegrapher_division_remainder": "0",
+    "charged_full_quotient": "0",
+    "charged_full_division_remainder": "0",
+    "all_angle_characteristic_equation": "0",
+    "luminal_characteristic_endpoint": "0",
+    "zero_speed_characteristic_endpoint": "0",
+    "luminal_neutral_leading": "0",
+    "conformal_benchmark_original_remainder": "0",
+    "conformal_benchmark_entropy_bulk": "0",
+    "conformal_benchmark_entropy_conduction": "0",
+    "conformal_benchmark_entropy_vector": "0",
+    "benchmark_e1": "0",
+    "benchmark_e2": "0",
+    "benchmark_p1": "0",
+    "benchmark_p2": "0",
+    "benchmark_t1": "0",
+    "benchmark_t2": "0",
+    "benchmark_conformal_e1": "0",
+    "benchmark_conformal_e2": "0",
+    "benchmark_conformal_e3": "0",
+    "benchmark_conformal_nu": "0",
+    "benchmark_conformal_ga": "0",
+    "benchmark_sound_speeds": "0",
+    "benchmark_shear_speed": "0",
+    "benchmark_charge_speed": "0",
+    "nonconformal_unequal_vectors_original_remainder": "0",
+    "nonconformal_unequal_vectors_entropy_bulk": "0",
+    "nonconformal_unequal_vectors_entropy_conduction": "0",
+    "nonconformal_unequal_vectors_entropy_vector": "0",
+    "conformal_zero_transport_original_remainder": "0",
+    "conformal_zero_transport_entropy_bulk": "0",
+    "conformal_zero_transport_entropy_conduction": "0",
+    "conformal_zero_transport_entropy_vector": "0",
+    "zero_transport_original_Euler": "0"
+  },
+  "exact_requirements": {
+    "eta_zero_cubic_degree": true,
+    "neutral_nondegenerate_frequency_degree": true,
+    "neutral_nondegenerate_total_derivative_degree": true,
+    "charged_nondegenerate_frequency_degree": true,
+    "charged_nondegenerate_total_derivative_degree": true,
+    "conformal_benchmark_physical_eta": true,
+    "conformal_benchmark_physical_zeta": true,
+    "conformal_benchmark_physical_Dphys": true,
+    "example_temperature_normalization": true,
+    "conformal_benchmark_domain_T": true,
+    "conformal_benchmark_domain_w": true,
+    "conformal_benchmark_domain_Delta_J": true,
+    "conformal_benchmark_domain_x": true,
+    "conformal_benchmark_domain_one_minus_x": true,
+    "conformal_benchmark_domain_E": true,
+    "conformal_benchmark_domain_n_mu": true,
+    "conformal_benchmark_domain_compound": true,
+    "conformal_benchmark_domain_charge_fluctuation": true,
+    "example_amplitude_range": true,
+    "example_deformation_range": true,
+    "example_charge_speed_range": true,
+    "example_finite_boost": true,
+    "nonconformal_unequal_vectors_physical_eta": true,
+    "nonconformal_unequal_vectors_physical_zeta": true,
+    "nonconformal_unequal_vectors_physical_Dphys": true,
+    "nonconformal_unequal_vectors_domain_T": true,
+    "nonconformal_unequal_vectors_domain_w": true,
+    "nonconformal_unequal_vectors_domain_Delta_J": true,
+    "nonconformal_unequal_vectors_domain_x": true,
+    "nonconformal_unequal_vectors_domain_one_minus_x": true,
+    "nonconformal_unequal_vectors_domain_E": true,
+    "nonconformal_unequal_vectors_domain_n_mu": true,
+    "nonconformal_unequal_vectors_domain_compound": true,
+    "nonconformal_unequal_vectors_domain_charge_fluctuation": true,
+    "conformal_zero_transport_physical_eta": true,
+    "conformal_zero_transport_physical_zeta": true,
+    "conformal_zero_transport_physical_Dphys": true,
+    "conformal_zero_transport_domain_T": true,
+    "conformal_zero_transport_domain_w": true,
+    "conformal_zero_transport_domain_Delta_J": true,
+    "conformal_zero_transport_domain_x": true,
+    "conformal_zero_transport_domain_one_minus_x": true,
+    "conformal_zero_transport_domain_E": true,
+    "conformal_zero_transport_domain_n_mu": true,
+    "conformal_zero_transport_domain_compound": true,
+    "conformal_zero_transport_domain_charge_fluctuation": true,
+    "zero_transport_degree": true,
+    "Euler_full_degree_frequency": true,
+    "Euler_full_degree_total": true
+  },
+  "degree_records": {
+    "neutral_nondegenerate": {
+      "frequency": 8,
+      "total_derivative": 8
+    },
+    "charged_nondegenerate": {
+      "frequency": 10,
+      "total_derivative": 10
+    },
+    "conformal_benchmark": {
+      "frequency": 10,
+      "total_derivative": 10
+    },
+    "nonconformal_unequal_vectors": {
+      "frequency": 10,
+      "total_derivative": 10
+    },
+    "conformal_zero_transport": {
+      "frequency": 5,
+      "total_derivative": 5
+    }
+  },
+  "division_certificates": {
+    "neutral_relaxation": {
+      "original": "e1*s**4*t1*x + e1*s**3*w*x + p1*q*s**2*t1*x + p1*q*s*w*x + q*s*t1*w*x + q*w**2*x + s**3*t1*w + s**2*w**2",
+      "divisor": "s*t1 + w",
+      "quotient": "e1*s**3*x + p1*q*s*x + q*w*x + s**2*w",
+      "remainder": "0",
+      "division_domain": "theta1 != 0 for this degree-one division; the polynomial difference also covers theta1=0"
+    },
+    "charged_telegrapher": {
+      "original": "-Delta_J*(Dq*q + s**2*tau_q + s)*(4*e1*eta*q*s**2*x - 3*e1*p2*q*s**2*x + 3*e1*s**4*t1*x + 3*e1*s**3*w*x + 3*e2*p1*q*s**2*x + 3*e2*q*s**2*t2*x + 3*e2*q*s*w*x - 4*eta*q**2*t2*x + 4*eta*q*s*w + 3*p1*q*s**2*t1*x + 3*p1*q*s*w*x + 3*p2*q**2*t2*x - 3*p2*q*s*w + 3*q*s*t1*w*x + 3*q*w**2*x + 3*s**3*t1*w + 3*s**2*w**2)/(3*w)",
+      "divisor": "Dq*q + s**2*tau_q + s",
+      "quotient": "-Delta_J*(4*e1*eta*q*s**2*x - 3*e1*p2*q*s**2*x + 3*e1*s**4*t1*x + 3*e1*s**3*w*x + 3*e2*p1*q*s**2*x + 3*e2*q*s**2*t2*x + 3*e2*q*s*w*x - 4*eta*q**2*t2*x + 4*eta*q*s*w + 3*p1*q*s**2*t1*x + 3*p1*q*s*w*x + 3*p2*q**2*t2*x - 3*p2*q*s*w + 3*q*s*t1*w*x + 3*q*w**2*x + 3*s**3*t1*w + 3*s**2*w**2)/(3*w)",
+      "remainder": "0",
+      "division_domain": "tau_q != 0 for this degree-two division; zero-transport reductions checked separately"
+    },
+    "charged_full": {
+      "original": "-Delta_J*(Dq*q + s**2*tau_q + s)*(4*e1*eta*q*s**2*x - 3*e1*p2*q*s**2*x + 3*e1*s**4*t1*x + 3*e1*s**3*w*x + 3*e2*p1*q*s**2*x + 3*e2*q*s**2*t2*x + 3*e2*q*s*w*x - 4*eta*q**2*t2*x + 4*eta*q*s*w + 3*p1*q*s**2*t1*x + 3*p1*q*s*w*x + 3*p2*q**2*t2*x - 3*p2*q*s*w + 3*q*s*t1*w*x + 3*q*w**2*x + 3*s**3*t1*w + 3*s**2*w**2)/(3*w)",
+      "divisor": "-Delta_J*(Dq*q + s**2*tau_q + s)*(4*e1*eta*q*s**2*x/3 - e1*p2*q*s**2*x + e1*s**4*t1*x + e1*s**3*w*x + e2*p1*q*s**2*x + e2*q*s**2*t2*x + e2*q*s*w*x - 4*eta*q**2*t2*x/3 + 4*eta*q*s*w/3 + p1*q*s**2*t1*x + p1*q*s*w*x + p2*q**2*t2*x - p2*q*s*w + q*s*t1*w*x + q*w**2*x + s**3*t1*w + s**2*w**2)/w",
+      "quotient": "1",
+      "remainder": "0",
+      "division_domain": "nonzero leading coefficient for this degree-six division; undivided identity holds on reduced branches"
+    }
+  },
+  "shifted_original_matrix": [
+    [
+      "s*(B**2*Delta_J*T0/(w*x) + w/(T0*x)) - k**2*(-B*Delta_J*T0*f_Q/w + t2)/T0 + s**2*(-B*Delta_J*T0*f_E/w + e1)/T0",
+      "T0**2*s*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))) - k**2*(Delta_J*T0*f_Q*(-B*T0*r + x)/w + T0*r*t2) + s**2*(Delta_J*T0*f_E*(-B*T0*r + x)/w + T0*e1*r)",
+      "I*k*(s*(e2 + t1) + w)"
+    ],
+    [
+      "I*k*(s*(-B*Delta_J*T0*f_P/w - B*Delta_J*T0*f_Q/w + p1 + t2)/T0 + w/T0)",
+      "I*k*(T0*r*w + s*(Delta_J*T0*f_P*(-B*T0*r + x)/w + Delta_J*T0*f_Q*(-B*T0*r + x)/w + T0*p1*r + T0*r*t2))",
+      "k**2*(4*eta/3 - p2) + s**2*t1 + s*w"
+    ],
+    [
+      "s*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))) - k**2*(B*Delta_J*Dq*T0/w - B*Delta_J*T0*f_Q*r/w + r*t2)/T0 + s**2*(-B*Delta_J*T0*f_E*r/w - B*Delta_J*T0*tau_q/w + e1*r)/T0",
+      "-k**2*(-Delta_J*Dq*T0*(-B*T0*r + x)/w + Delta_J*T0*f_Q*r*(-B*T0*r + x)/w + T0*r**2*t2) + s**2*(Delta_J*T0*f_E*r*(-B*T0*r + x)/w + Delta_J*T0*tau_q*(-B*T0*r + x)/w + T0*e1*r**2) + s*(Delta_J*T0*(-B*T0*r + x)/w + T0**2*r*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))))",
+      "I*k*(r*w + s*(e2*r + r*t1))"
+    ]
+  ],
+  "shifted_original_polynomial": "-Delta_J*(Dq*q + s**2*tau_q + s)*(4*e1*eta*q*s**2*x - 3*e1*p2*q*s**2*x + 3*e1*s**4*t1*x + 3*e1*s**3*w*x + 3*e2*p1*q*s**2*x + 3*e2*q*s**2*t2*x + 3*e2*q*s*w*x - 4*eta*q**2*t2*x + 4*eta*q*s*w + 3*p1*q*s**2*t1*x + 3*p1*q*s*w*x + 3*p2*q**2*t2*x - 3*p2*q*s*w + 3*q*s*t1*w*x + 3*q*w**2*x + 3*s**3*t1*w + 3*s**2*w**2)/(3*w)",
+  "original_charged_lab_gap": "(-4*Delta_J*Dq*e1*eta*gamma**3*s**3*v**4*x + 3*Delta_J*Dq*e1*gamma**3*p2*s**3*v**4*x + 3*Delta_J*Dq*e1*gamma**3*s**3*t1*v**2*x + 3*Delta_J*Dq*e1*gamma**2*s**2*v**2*w*x - 3*Delta_J*Dq*e2*gamma**3*p1*s**3*v**4*x - 3*Delta_J*Dq*e2*gamma**3*s**3*t2*v**4*x - 3*Delta_J*Dq*e2*gamma**2*s**2*v**4*w*x - 4*Delta_J*Dq*eta*gamma**3*s**3*t2*v**6*x - 4*Delta_J*Dq*eta*gamma**2*s**2*v**4*w - 3*Delta_J*Dq*gamma**3*p1*s**3*t1*v**4*x + 3*Delta_J*Dq*gamma**3*p2*s**3*t2*v**6*x - 3*Delta_J*Dq*gamma**2*p1*s**2*v**4*w*x + 3*Delta_J*Dq*gamma**2*p2*s**2*v**4*w - 3*Delta_J*Dq*gamma**2*s**2*t1*v**4*w*x + 3*Delta_J*Dq*gamma**2*s**2*t1*v**2*w - 3*Delta_J*Dq*gamma*s*v**4*w**2*x + 3*Delta_J*Dq*gamma*s*v**2*w**2 + 4*Delta_J*e1*eta*gamma**3*s**3*tau_q*v**2*x + 4*Delta_J*e1*eta*gamma**2*s**2*v**2*x - 3*Delta_J*e1*gamma**3*p2*s**3*tau_q*v**2*x - 3*Delta_J*e1*gamma**3*s**3*t1*tau_q*x - 3*Delta_J*e1*gamma**2*p2*s**2*v**2*x - 3*Delta_J*e1*gamma**2*s**2*t1*x - 3*Delta_J*e1*gamma**2*s**2*tau_q*w*x - 3*Delta_J*e1*gamma*s*w*x + 3*Delta_J*e2*gamma**3*p1*s**3*tau_q*v**2*x + 3*Delta_J*e2*gamma**3*s**3*t2*tau_q*v**2*x + 3*Delta_J*e2*gamma**2*p1*s**2*v**2*x + 3*Delta_J*e2*gamma**2*s**2*t2*v**2*x + 3*Delta_J*e2*gamma**2*s**2*tau_q*v**2*w*x + 3*Delta_J*e2*gamma*s*v**2*w*x + 4*Delta_J*eta*gamma**3*s**3*t2*tau_q*v**4*x + 4*Delta_J*eta*gamma**2*s**2*t2*v**4*x + 4*Delta_J*eta*gamma**2*s**2*tau_q*v**2*w + 4*Delta_J*eta*gamma*s*v**2*w + 3*Delta_J*gamma**3*p1*s**3*t1*tau_q*v**2*x - 3*Delta_J*gamma**3*p2*s**3*t2*tau_q*v**4*x + 3*Delta_J*gamma**2*p1*s**2*t1*v**2*x + 3*Delta_J*gamma**2*p1*s**2*tau_q*v**2*w*x - 3*Delta_J*gamma**2*p2*s**2*t2*v**4*x - 3*Delta_J*gamma**2*p2*s**2*tau_q*v**2*w + 3*Delta_J*gamma**2*s**2*t1*tau_q*v**2*w*x - 3*Delta_J*gamma**2*s**2*t1*tau_q*w + 3*Delta_J*gamma*p1*s*v**2*w*x - 3*Delta_J*gamma*p2*s*v**2*w + 3*Delta_J*gamma*s*t1*v**2*w*x - 3*Delta_J*gamma*s*t1*w + 3*Delta_J*gamma*s*tau_q*v**2*w**2*x - 3*Delta_J*gamma*s*tau_q*w**2 + 3*Delta_J*v**2*w**2*x - 3*Delta_J*w**2)/(3*w)",
+  "eta_zero_original_cubic": "Gamma*q*s*w + epsilon1*q*s*w*x**2 + epsilon1*s**3*w*x + q*w**2*x + s**2*w**2",
+  "neutral_matrix": [
+    [
+      "e1*s**2 - k**2*t2 + s*w/x",
+      "I*k*(s*(e2 + t1) + w)"
+    ],
+    [
+      "I*k*(s*(p1 + t2) + w)",
+      "k**2*(4*eta/3 - p2) + s**2*t1 + s*w"
+    ]
+  ],
+  "neutral_polynomial": "4*e1*eta*q*s**2*x/3 - e1*p2*q*s**2*x + e1*s**4*t1*x + e1*s**3*w*x + e2*p1*q*s**2*x + e2*q*s**2*t2*x + e2*q*s*w*x - 4*eta*q**2*t2*x/3 + 4*eta*q*s*w/3 + p1*q*s**2*t1*x + p1*q*s*w*x + p2*q**2*t2*x - p2*q*s*w + q*s*t1*w*x + q*w**2*x + s**3*t1*w + s**2*w**2",
+  "charged_matrix": [
+    [
+      "s*(B**2*Delta_J*T0/(w*x) + w/(T0*x)) + e1*s**2/T0 - k**2*t2/T0",
+      "T0**2*s*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))) + T0*e1*r*s**2 - T0*k**2*r*t2",
+      "I*k*(s*(e2 + t1) + w)"
+    ],
+    [
+      "I*k*(s*(p1 + t2)/T0 + w/T0)",
+      "I*k*(T0*r*w + s*(T0*p1*r + T0*r*t2))",
+      "k**2*(4*eta/3 - p2) + s**2*t1 + s*w"
+    ],
+    [
+      "s*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))) - k**2*(B*Delta_J*Dq*T0/w + r*t2)/T0 + s**2*(-B*Delta_J*T0*tau_q/w + e1*r)/T0",
+      "-k**2*(-Delta_J*Dq*T0*(-B*T0*r + x)/w + T0*r**2*t2) + s**2*(Delta_J*T0*tau_q*(-B*T0*r + x)/w + T0*e1*r**2) + s*(Delta_J*T0*(-B*T0*r + x)/w + T0**2*r*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))))",
+      "I*k*(r*w + s*(e2*r + r*t1))"
+    ]
+  ],
+  "charged_polynomial": "-Delta_J*(Dq*q + s**2*tau_q + s)*(4*e1*eta*q*s**2*x - 3*e1*p2*q*s**2*x + 3*e1*s**4*t1*x + 3*e1*s**3*w*x + 3*e2*p1*q*s**2*x + 3*e2*q*s**2*t2*x + 3*e2*q*s*w*x - 4*eta*q**2*t2*x + 4*eta*q*s*w + 3*p1*q*s**2*t1*x + 3*p1*q*s*w*x + 3*p2*q**2*t2*x - 3*p2*q*s*w + 3*q*s*t1*w*x + 3*q*w**2*x + 3*s**3*t1*w + 3*s**2*w**2)/(3*w)",
+  "thermodynamic_chart": {
+    "T": "T0",
+    "w": "w",
+    "n": "r*w",
+    "r": "r",
+    "E": "B**2*Delta_J*T0/(w*x) + w/(T0*x)",
+    "F": "T0**2*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x)))",
+    "N": "-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x))",
+    "H": "Delta_J*T0*(-B*T0*r + x)/w + T0**2*r*(-B*Delta_J/w + r*(B**2*Delta_J*T0/(w*x) + w/(T0*x)))",
+    "A": "-B*T0*r + x",
+    "B": "B",
+    "qT": "-B*Delta_J/w",
+    "qA": "Delta_J*T0*(-B*T0*r + x)/w",
+    "Delta_J": "Delta_J",
+    "Xi": "Delta_J*T0*x/w",
+    "x": "x"
+  },
+  "ideal_sound_remainder": "-4*e1*eta*q**2*x**2/3 + e1*p2*q**2*x**2 + e1*q**2*t1*x**3 - e2*p1*q**2*x**2 - e2*q**2*t2*x**2 - 4*eta*q**2*t2*x/3 - p1*q**2*t1*x**2 + p2*q**2*t2*x + s*(-e1*q*w*x**2 + e2*q*w*x + 4*eta*q*w/3 + p1*q*w*x - p2*q*w)",
+  "examples": [
+    {
+      "name": "conformal_benchmark",
+      "pressure": "T**4 + T**2*mu**2",
+      "ell": "0",
+      "T0": "1",
+      "mu0": "1/2",
+      "eta": "1/5",
+      "zeta": "0",
+      "Dphys": "1/10",
+      "amplitude": "2",
+      "beta": "1",
+      "alpha_q": "2",
+      "thermodynamics": {
+        "T": "1",
+        "w": "5",
+        "n": "1",
+        "r": "1/5",
+        "E": "15",
+        "F": "3",
+        "N": "3",
+        "H": "2",
+        "A": "1/3",
+        "B": "0",
+        "qT": "0",
+        "qA": "7/5",
+        "Delta_J": "21",
+        "Xi": "7/5",
+        "x": "1/3"
+      },
+      "coefficients": {
+        "e1": "24/5",
+        "e2": "8/5",
+        "p1": "8/5",
+        "p2": "8/15",
+        "t1": "16/5",
+        "t2": "16/5",
+        "eta": "1/5",
+        "e3": "24/25",
+        "p3": "8/25",
+        "t3": "16/25",
+        "nu1": "24/25",
+        "nu2": "8/25",
+        "nu3": "49/125",
+        "ga1": "16/25",
+        "ga2": "16/25",
+        "ga3": "7/250"
+      },
+      "original_matrix": [
+        [
+          "-16*k**2/5 + 24*s**2/5 + 15*s",
+          "-16*k**2/25 + 24*s**2/25 + 3*s",
+          "I*k*(24*s/5 + 5)"
+        ],
+        [
+          "I*k*(24*s/5 + 5)",
+          "I*k*(24*s/25 + 1)",
+          "-4*k**2/15 + 16*s**2/5 + 5*s"
+        ],
+        [
+          "-16*k**2/25 + 24*s**2/25 + 3*s",
+          "-7*k**2/250 + 49*s**2/125 + 2*s",
+          "I*k*(24*s/25 + 1)"
+        ]
+      ],
+      "domain_margins": {
+        "T": "1",
+        "w": "5",
+        "Delta_J": "21",
+        "x": "1/3",
+        "one_minus_x": "2/3",
+        "E": "15",
+        "n_mu": "2",
+        "compound": "1/3",
+        "charge_fluctuation": "7/5"
+      },
+      "original_polynomial": "-(q + 2*s**2 + 14*s)*(64*q**2 + 864*q*s**2 + 2100*q*s + 1875*q + 1152*s**4 + 5400*s**3 + 5625*s**2)/750",
+      "neutral_polynomial": "(64*q**2 + 864*q*s**2 + 2100*q*s + 1875*q + 1152*s**4 + 5400*s**3 + 5625*s**2)/225",
+      "boost": "4/5",
+      "kz": "2/3",
+      "kperp": "1/2",
+      "rest": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-384*s**6/125 - 4488*s**5/125 - 1777*s**4/15 - 5629*s**3/45 - 71035*s**2/1944 - 50995*s/1944 - 86375/69984",
+        "degree": 6,
+        "exact_coefficients_descending": [
+          "-384/125",
+          "-4488/125",
+          "-1777/15",
+          "-5629/45",
+          "-71035/1944",
+          "-50995/1944",
+          "-86375/69984"
+        ],
+        "roots": [
+          {
+            "root": "-6.9500402574140751289509256826857443891734194538620274717408173637757828837840629",
+            "multiplicity": 1,
+            "absolute_residual": "5.5271478752604445602472651921922557255142402332392200864151702209078987540239533e-76",
+            "scaled_residual": "4.426070866277670e-82"
+          },
+          {
+            "root": "-0.049959742585924871049074317314255610826580546137972528259182636224217116215937049",
+            "multiplicity": 1,
+            "absolute_residual": "7.2568271212372011133742770823622554418776347907833847241441170468866844710324457e-82",
+            "scaled_residual": "2.736043813933614e-82"
+          },
+          {
+            "root": "-2.9641537152165997123717586658380464973608289776268899541628037406981511763426467",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-1.6855019019713285110452949127701376849899224216875996356999917979198148869512528",
+            "multiplicity": 1,
+            "absolute_residual": "6.7470066836675348635830873928128121649343752847158448320497683360692123462206461e-79",
+            "scaled_residual": "2.981177143059926e-82"
+          },
+          {
+            "root": "-0.018922191406035888291473210695907908824624300342755205068602230691016968353050286 - 0.48087182507567273691581451171679256101364729291855822177055651090601913969347245*I",
+            "multiplicity": 1,
+            "absolute_residual": "9.2496744659600002592717262396294680705345213078181998217224631786915705371421504e-81",
+            "scaled_residual": "2.122380839077904e-82"
+          },
+          {
+            "root": "-0.018922191406035888291473210695907908824624300342755205068602230691016968353050286 + 0.48087182507567273691581451171679256101364729291855822177055651090601913969347245*I",
+            "multiplicity": 1,
+            "absolute_residual": "9.2496744659600002592717262396294680705345213078181998217224631786915705371421504e-81",
+            "scaled_residual": "2.122380839077904e-82"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "boosted": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-6643328*s**6/273375 - 4459288*s**5/18225 - 129536*I*s**5/2187 - 19529171*s**4/32805 - 146221504*I*s**4/273375 + 4109281*s**3/164025 - 1798522792*I*s**3/1476225 + 48428983699*s**2/59049000 - 1066659784*I*s**2/2460375 + 550794133*s/2361960 + 958069114*I*s/4428675 - 109556069267/6377292000 + 663645673*I/22143375",
+        "degree": 6,
+        "exact_coefficients_descending": [
+          "-6643328/273375",
+          "-4459288/18225 - 129536*I/2187",
+          "-19529171/32805 - 146221504*I/273375",
+          "4109281/164025 - 1798522792*I/1476225",
+          "48428983699/59049000 - 1066659784*I/2460375",
+          "550794133/2361960 + 958069114*I/4428675",
+          "-109556069267/6377292000 + 663645673*I/22143375"
+        ],
+        "roots": [
+          {
+            "root": "-6.1588861608830451062994917127438894458330101562231606212842521328616331814478759 - 0.2501719292287667227246969941513449928777250247179455283389222069932822054295686*I",
+            "multiplicity": 1,
+            "absolute_residual": "2.6674032084500027413860813458977468672778936697563898111870654235522357869364571e-77",
+            "scaled_residual": "5.281058439050950e-84"
+          },
+          {
+            "root": "-0.017584427352249011347567110785522318872872196718015849303983161256013877375653488 - 0.534141796261429355706675554868262850259529877242838785386567989085149167119451*I",
+            "multiplicity": 1,
+            "absolute_residual": "2.5734075983792395825324580914216732953124658783931882060753080722767864586301832e-80",
+            "scaled_residual": "3.513961994001160e-83"
+          },
+          {
+            "root": "-3.0086520542253768263314540523820274691880470248919509469687712143538535913853914 - 0.15555008805268305458837397566075703198089340835722312561443954702535710704145745*I",
+            "multiplicity": 1,
+            "absolute_residual": "5.1113040855291984489197127602908722256547825072517109155737222712070926092276177e-78",
+            "scaled_residual": "2.700018881185449e-83"
+          },
+          {
+            "root": "-0.85273543661051416642267650558350245322291746279872946156828561462801791464504228 - 0.59134958948258839164792061849072717946530307719200276054147694186147987859488913*I",
+            "multiplicity": 1,
+            "absolute_residual": "2.0868271738654899636812274078846889421025385582496841559602298437814555358276951e-79",
+            "scaled_residual": "5.234530857358504e-83"
+          },
+          {
+            "root": "-0.026891632131138884792891549247103840565976934815183234919357209265950781260908677 - 0.19118134219465052361878788545962296723824603613884026412982444876933497504420507*I",
+            "multiplicity": 1,
+            "absolute_residual": "3.7440400472351292706465369524965765607678662060837151787601915605551504698823968e-80",
+            "scaled_residual": "2.665109748469379e-82"
+          },
+          {
+            "root": "-0.003896605824322890222385033304889984157025167733245429586494576229740765443672373 - 0.71493786879502616858797898998164312156667659611955476902859468850388918136552325*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.1309737770372720837072729939418445664572942525090114266192972659304106618791888e-79",
+            "scaled_residual": "7.849371396421064e-83"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "gaps": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-6643328*s**3/1265625 - 4459288*s**2/84375 - 3489*s/25 - 413/5",
+        "degree": 3,
+        "exact_coefficients_descending": [
+          "-6643328/1265625",
+          "-4459288/84375",
+          "-3489/25",
+          "-413/5"
+        ],
+        "roots": [
+          {
+            "root": "-6.1764705882352941176470588235294117647058823529411764705882352941176470588235294",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-3.0594139699832436387491845370805033501434234554274916548523360640152540748928666",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-0.83276175880810912902022260343702039699054313481161741819057255046230897784214816",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "full_system_degrees": {
+        "frequency": 10,
+        "total_derivative": 10
+      }
+    },
+    {
+      "name": "nonconformal_unequal_vectors",
+      "pressure": "T**4 + T**2*mu**2 + T**2/7",
+      "ell": "1/7",
+      "T0": "1",
+      "mu0": "1/2",
+      "eta": "1/5",
+      "zeta": "1/10",
+      "Dphys": "1/10",
+      "amplitude": "2",
+      "beta": "1",
+      "alpha_q": "2",
+      "thermodynamics": {
+        "T": "1",
+        "w": "37/7",
+        "n": "1",
+        "r": "7/37",
+        "E": "107/7",
+        "F": "3",
+        "N": "3",
+        "H": "2",
+        "A": "53/151",
+        "B": "-4/151",
+        "qT": "4/37",
+        "qA": "53/37",
+        "Delta_J": "151/7",
+        "Xi": "1933/1369",
+        "x": "1933/5587"
+      },
+      "coefficients": {
+        "e1": "94868930513/14628354435",
+        "e2": "6384592424/2925670887",
+        "p1": "6384592424/2925670887",
+        "p2": "5547553/8756490",
+        "t1": "3429438216320/763600101507",
+        "t2": "126094983207706756424441/28046976577334778656925",
+        "eta": "1/5",
+        "e3": "17948176043/14628354435",
+        "p3": "1207895864/2925670887",
+        "t3": "23855807633890467431651/28046976577334778656925",
+        "nu1": "3634435963/2925670887",
+        "nu2": "6151481206/14628354435",
+        "nu3": "6363650852/14628354435",
+        "ga1": "3214830685354/3818000507535",
+        "ga2": "23641066168114701925121/28046976577334778656925",
+        "ga3": "123427299681328464890449/2075476266722773620612450"
+      },
+      "original_matrix": [
+        [
+          "-126094983207706756424441*k**2/28046976577334778656925 + 94868930513*s**2/14628354435 + 107*s/7",
+          "-23855807633890467431651*k**2/28046976577334778656925 + 17948176043*s**2/14628354435 + 3*s",
+          "I*k*(5095816838984*s/763600101507 + 37/7)"
+        ],
+        [
+          "I*k*(187300949663959454517041*s/28046976577334778656925 + 37/7)",
+          "I*k*(35435314801289626530251*s/28046976577334778656925 + 1)",
+          "-3212489*k**2/8756490 + 3429438216320*s**2/763600101507 + 37*s/7"
+        ],
+        [
+          "-23641066168114701925121*k**2/28046976577334778656925 + 3634435963*s**2/2925670887 + 3*s",
+          "-123427299681328464890449*k**2/2075476266722773620612450 + 6363650852*s**2/14628354435 + 2*s",
+          "I*k*(964073456024*s/763600101507 + 1)"
+        ]
+      ],
+      "domain_margins": {
+        "T": "1",
+        "w": "37/7",
+        "Delta_J": "151/7",
+        "x": "1933/5587",
+        "one_minus_x": "3654/5587",
+        "E": "107/7",
+        "n_mu": "2",
+        "compound": "300563/843637",
+        "charge_fluctuation": "2809/1933"
+      },
+      "original_polynomial": "-(1369*q + 2738*s**2 + 19330*s)*(270648842925961205760242923375808349*q**2 + 3609173139973963706385810730608745445*q*s**2 + 6761134428624387033374884711674903075*q*s + 4584481170108750589696658196431078250*q + 4779344775830066074307186620863776000*s**4 + 16883657082108766588137435713042717850*s**3 + 13250644747748364999811292986787601750*s**2)/2246395773353287788951362516251228342500",
+      "neutral_polynomial": "(270648842925961205760242923375808349*q**2 + 3609173139973963706385810730608745445*q*s**2 + 6761134428624387033374884711674903075*q*s + 4584481170108750589696658196431078250*q + 4779344775830066074307186620863776000*s**4 + 16883657082108766588137435713042717850*s**3 + 13250644747748364999811292986787601750*s**2)/474274355470905686625824219395611750",
+      "boost": "4/5",
+      "kz": "2/3",
+      "kperp": "1/2",
+      "rest": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-65069427168537748514432*s**6/11170212931446373633545 - 12479948311388508836699*s**5/202254243456090572775 - 68374074152270461503209707935077647*s**4/410630289619739645871172824375960 - 18921986037143699712181169451197*s**3/127458962116835896286965180872 - 6434503790192799081022894856418539061371*s**2/125895304746631825923501224694555326784 - 145707693299499319627703701904905*s/4776469865072739699962238418752 - 12600030322888349558493385545603025/8983377972180589465972222894165248",
+        "degree": 6,
+        "exact_coefficients_descending": [
+          "-65069427168537748514432/11170212931446373633545",
+          "-12479948311388508836699/202254243456090572775",
+          "-68374074152270461503209707935077647/410630289619739645871172824375960",
+          "-18921986037143699712181169451197/127458962116835896286965180872",
+          "-6434503790192799081022894856418539061371/125895304746631825923501224694555326784",
+          "-145707693299499319627703701904905/4776469865072739699962238418752",
+          "-12600030322888349558493385545603025/8983377972180589465972222894165248"
+        ],
+        "roots": [
+          {
+            "root": "-7.0103679211431290719111794971001064442054278134350314999330489495458407950755154",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-0.049529814430282177175745265500331831908523976192433803207929867108651535092490452",
+            "multiplicity": 1,
+            "absolute_residual": "9.9026139127391206312698092437161616533603702194001056637998518650155237205825562e-82",
+            "scaled_residual": "3.238309190536056e-82"
+          },
+          {
+            "root": "-2.1288489994111127265283364837156164674233173416384105910576103945541048284458160",
+            "multiplicity": 1,
+            "absolute_residual": "4.3180842775472223126931759314001997855580001822181406925118517350842959015812135e-78",
+            "scaled_residual": "5.146439248701962e-82"
+          },
+          {
+            "root": "-1.3536727082851802881053573996729552784226462854428463923251401014082922638522850",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-0.025054182419188925901513993912596380840012401775411544658941658815090176218718419 - 0.48990060697617071619925710274318141092801531340287987433549812693770648589424674*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.4544607634661728008930062243879290994320280458948067398419176848214585544480913e-80",
+            "scaled_residual": "2.522300253409970e-82"
+          },
+          {
+            "root": "-0.025054182419188925901513993912596380840012401775411544658941658815090176218718419 + 0.48990060697617071619925710274318141092801531340287987433549812693770648589424674*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.4544607634661728008930062243879290994320280458948067398419176848214585544480913e-80",
+            "scaled_residual": "2.522300253409970e-82"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "boosted": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-1150105342703010696294421901360065475768*s**6/25090741539108702551718196885872793125 - 18798413558462630514508948842804848179*s**5/44824984022273867638523973053568225 - 1678297191080379773059807206141416987128*I*s**5/15054444923465221531030918131523675875 - 71214744819271331180141881706004312573507121*s**4/88520136149975502602461798613359214145000 - 361376118727359752173488857332803232*I*s**4/395282046051797774590158492535875 + 6331318939420040579507229913266638330611*s**3/22591791947226029289816082418998385400 - 3733022032830809232921425829338381946138202*I*s**3/2213003403749387565061544965333980353625 + 1035313153541012562276467414626989711371359699*s**2/910492828971176598196749928594551916920000 - 16780272525041997949069206950045175326413*I*s**2/42359609901048804918405154535621972625 + 726317444096273042198091145135946287513*s/2930827063423917313273437719221412160 + 17769584012630254746382843864732774776703306*I*s/59751091901233464256661714064017469547875 - 5210056465917159184044814749973721646768238673/229444192900736502745580982005827083063840000 + 2707691202289907476616626565963654483959*I/82429511158797674435815435853102217000",
+        "degree": 6,
+        "exact_coefficients_descending": [
+          "-1150105342703010696294421901360065475768/25090741539108702551718196885872793125",
+          "-18798413558462630514508948842804848179/44824984022273867638523973053568225 - 1678297191080379773059807206141416987128*I/15054444923465221531030918131523675875",
+          "-71214744819271331180141881706004312573507121/88520136149975502602461798613359214145000 - 361376118727359752173488857332803232*I/395282046051797774590158492535875",
+          "6331318939420040579507229913266638330611/22591791947226029289816082418998385400 - 3733022032830809232921425829338381946138202*I/2213003403749387565061544965333980353625",
+          "1035313153541012562276467414626989711371359699/910492828971176598196749928594551916920000 - 16780272525041997949069206950045175326413*I/42359609901048804918405154535621972625",
+          "726317444096273042198091145135946287513/2930827063423917313273437719221412160 + 17769584012630254746382843864732774776703306*I/59751091901233464256661714064017469547875",
+          "-5210056465917159184044814749973721646768238673/229444192900736502745580982005827083063840000 + 2707691202289907476616626565963654483959*I/82429511158797674435815435853102217000"
+        ],
+        "roots": [
+          {
+            "root": "-6.2118865074814090208686050650349278520632444672166986367277179297254916947193905 - 0.25018567606413887975723225837332821828619972575206410602305758596100191526221686*I",
+            "multiplicity": 1,
+            "absolute_residual": "6.6156970383317636508071942679127550099435445264675565000035009238091378756916583e-76",
+            "scaled_residual": "7.387230471537497e-83"
+          },
+          {
+            "root": "-0.017435023906895022443387372553694156272595347160476630749616320263766243664144042 - 0.53412804942605719867414029064627962485105517620872020770243261011742945728680275*I",
+            "multiplicity": 1,
+            "absolute_residual": "7.2766991075174264572192795795873355384906118072277215664666415325281583790577068e-80",
+            "scaled_residual": "7.493982870537331e-83"
+          },
+          {
+            "root": "-2.2232638780613438558293371183811545212368430771801307905418019002387072803483751 - 0.15514855489391906952141071910106340661477458963507867828916580167402864150018208*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.0040626614778251086318323869188338608228270342439537032683450163966684711453473e-78",
+            "scaled_residual": "1.176642802484800e-83"
+          },
+          {
+            "root": "-0.65423095821961704615972319701061152160948852898574888094363826616877107651891355 - 0.59284694122658933837432610947273003509357061508574132149262396606417832834196625*I",
+            "multiplicity": 1,
+            "absolute_residual": "2.1069248297676602723818576178951987130111313636063238823442435209279748843376291e-79",
+            "scaled_residual": "6.034394716323685e-83"
+          },
+          {
+            "root": "-0.037162865411483269590680755786785911090878722763924620226313765512305935700752527 - 0.18185826859941121646304146465511844790930773068060193049388430956550143612462662*I",
+            "multiplicity": 1,
+            "absolute_residual": "4.0524181884490947183557577097339309510684785837856026459903619848636511845195080e-80",
+            "scaled_residual": "2.444858756469960e-82"
+          },
+          {
+            "root": "-0.005090381214401400731924681475392221827909407307265966731510527696929988780399272 - 0.71792449412933240410374301294630411919860853274908795095286571607589568316069843*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.0457037137200694372651657165585886756226519904578954412185485518666405986090251e-79",
+            "scaled_residual": "5.270965314864661e-83"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "gaps": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-1150105342703010696294421901360065475768*s**3/116160840458836585887584244842003671875 - 18798413558462630514508948842804848179*s**2/207523074177193831659833208581334375 - 1514820515946801536*s/7795084369550625 - 108747/1225",
+        "degree": 3,
+        "exact_coefficients_descending": [
+          "-1150105342703010696294421901360065475768/116160840458836585887584244842003671875",
+          "-18798413558462630514508948842804848179/207523074177193831659833208581334375",
+          "-1514820515946801536/7795084369550625",
+          "-108747/1225"
+        ],
+        "roots": [
+          {
+            "root": "-6.2293215313883040433119924375886220083358398143771752674773342499892579383835346",
+            "multiplicity": 1,
+            "absolute_residual": "6.4771264163208334690397638971002996783370002733272110387677776026264438523718203e-78",
+            "scaled_residual": "8.986368833420763e-82"
+          },
+          {
+            "root": "-2.2916762658942811088371768382142999592399451860597985604540043501354623217977574",
+            "multiplicity": 1,
+            "absolute_residual": "5.3976053469340278908664699142502497319475002277726758656398146688553698769765169e-79",
+            "scaled_residual": "4.780839394864229e-82"
+          },
+          {
+            "root": "-0.62807181701256446347448891443964421652517455017727169798926010948125195955068311",
+            "multiplicity": 1,
+            "absolute_residual": "1.3494013367335069727166174785625624329868750569431689664099536672138424692441292e-79",
+            "scaled_residual": "5.419004544186686e-82"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "full_system_degrees": {
+        "frequency": 10,
+        "total_derivative": 10
+      }
+    },
+    {
+      "name": "conformal_zero_transport",
+      "pressure": "T**4 + T**2*mu**2",
+      "ell": "0",
+      "T0": "1",
+      "mu0": "1/2",
+      "eta": "0",
+      "zeta": "0",
+      "Dphys": "0",
+      "amplitude": "2",
+      "beta": "1",
+      "alpha_q": "2",
+      "thermodynamics": {
+        "T": "1",
+        "w": "5",
+        "n": "1",
+        "r": "1/5",
+        "E": "15",
+        "F": "3",
+        "N": "3",
+        "H": "2",
+        "A": "1/3",
+        "B": "0",
+        "qT": "0",
+        "qA": "7/5",
+        "Delta_J": "21",
+        "Xi": "7/5",
+        "x": "1/3"
+      },
+      "coefficients": {
+        "e1": "0",
+        "e2": "0",
+        "p1": "0",
+        "p2": "0",
+        "t1": "0",
+        "t2": "0",
+        "eta": "0",
+        "e3": "0",
+        "p3": "0",
+        "t3": "0",
+        "nu1": "0",
+        "nu2": "0",
+        "nu3": "0",
+        "ga1": "0",
+        "ga2": "0",
+        "ga3": "0"
+      },
+      "original_matrix": [
+        [
+          "15*s",
+          "3*s",
+          "5*I*k"
+        ],
+        [
+          "5*I*k",
+          "I*k",
+          "5*s"
+        ],
+        [
+          "3*s",
+          "2*s",
+          "I*k"
+        ]
+      ],
+      "domain_margins": {
+        "T": "1",
+        "w": "5",
+        "Delta_J": "21",
+        "x": "1/3",
+        "one_minus_x": "2/3",
+        "E": "15",
+        "n_mu": "2",
+        "compound": "1/3",
+        "charge_fluctuation": "7/5"
+      },
+      "original_polynomial": "-35*s*(q + 3*s**2)",
+      "neutral_polynomial": "25*(q + 3*s**2)/3",
+      "boost": "4/5",
+      "kz": "2/3",
+      "kperp": "1/2",
+      "rest": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-105*s**3 - 875*s/36",
+        "degree": 3,
+        "exact_coefficients_descending": [
+          "-105",
+          "0",
+          "-875/36",
+          "0"
+        ],
+        "roots": [
+          {
+            "root": "0",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "exact zero"
+          },
+          {
+            "root": "-0.48112522432468813709095731708496454637300145939177239668216860540331472691911112*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.6867516709168837158957718482032030412335938211789612080124420840173030865551615e-80",
+            "scaled_residual": "7.212029168644848e-82"
+          },
+          {
+            "root": "0.48112522432468813709095731708496454637300145939177239668216860540331472691911112*I",
+            "multiplicity": 1,
+            "absolute_residual": "1.6867516709168837158957718482032030412335938211789612080124420840173030865551615e-80",
+            "scaled_residual": "7.212029168644848e-82"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "boosted": {
+        "decimal_digits": 80,
+        "exact_polynomial": "-10325*s**3/27 - 14840*I*s**2/27 + 76475*s/324 + 20090*I/729",
+        "degree": 3,
+        "exact_coefficients_descending": [
+          "-10325/27",
+          "-14840*I/27",
+          "76475/324",
+          "20090*I/729"
+        ],
+        "roots": [
+          {
+            "root": "-0.53333333333333333333333333333333333333333333333333333333333333333333333333333333*I",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-0.18899230538108077901794521191061306125785818820693448725679650220789460356843407*I",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          },
+          {
+            "root": "-0.7149624968788062266317723022136807240528762750699016709352938932723313851321309*I",
+            "multiplicity": 1,
+            "absolute_residual": "0",
+            "scaled_residual": "0"
+          }
+        ],
+        "scope": "finite diagnostic, not universal proof"
+      },
+      "gaps": {
+        "exact_polynomial": "-413/5",
+        "degree": 0
+      },
+      "full_system_degrees": {
+        "frequency": 5,
+        "total_derivative": 5
+      }
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "mpmath": "1.3.0",
+  "inputs_sha256": "9fd927e89c79aea784c4d135b9296eec8831b8af5a67cf59a2035fb79a1cf8a9",
+  "script_sha256": "df8d8c5662590667db5a2ac662a168cdff4105a5f02647c2a436f98a5ae70193",
+  "manuscript_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8"
+}
