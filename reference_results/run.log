@@ -1,0 +1,3 @@
+PASS: 79 exact residual checks and 49 exact requirements.
+Saved three rational examples with 80-digit roots and absolute/scaled residuals.
+Numerical samples are diagnostics; analytic universal obligations remain separately scoped.
