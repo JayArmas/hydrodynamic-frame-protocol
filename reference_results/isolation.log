@@ -1,0 +1,96 @@
+## Create environment without system packages
+COMMAND: /private/tmp/bdnk-protocol-clean-v1/bin/python -I -m venv ${CLEAN_ENV}
+EXIT: 0
+
+## Install locked universal wheels
+COMMAND: ${CLEAN_ENV}/bin/python -I -m pip install --no-index --find-links ${WHEELHOUSE} --require-hashes -r ${PACKAGE}/requirements-lock.txt
+Looking in links: ${WHEELHOUSE}
+Processing ${WHEELHOUSE}/sympy-1.14.0-py3-none-any.whl (from -r ${PACKAGE}/requirements-lock.txt (line 2))
+Processing ${WHEELHOUSE}/mpmath-1.3.0-py3-none-any.whl (from -r ${PACKAGE}/requirements-lock.txt (line 3))
+Installing collected packages: mpmath, sympy
+Successfully installed mpmath-1.3.0 sympy-1.14.0
+EXIT: 0
+
+## Read isolated dependency inventory
+COMMAND: ${CLEAN_ENV}/bin/python -I -c import sys,json,sympy,mpmath,importlib.metadata as m;print(json.dumps({'python':sys.version,'sympy':sympy.__version__,'mpmath':mpmath.__version__,'installed':sorted((d.metadata['Name'],d.version) for d in m.distributions()),'sympy_file':sympy.__file__,'mpmath_file':mpmath.__file__,'sys_path':sys.path},indent=2))
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "installed": [
+    [
+      "mpmath",
+      "1.3.0"
+    ],
+    [
+      "pip",
+      "25.0.1"
+    ],
+    [
+      "sympy",
+      "1.14.0"
+    ]
+  ],
+  "sympy_file": "${CLEAN_ENV}/lib/python3.12/site-packages/sympy/__init__.py",
+  "mpmath_file": "${CLEAN_ENV}/lib/python3.12/site-packages/mpmath/__init__.py",
+  "sys_path": [
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+    "${CLEAN_ENV}/lib/python3.12/site-packages"
+  ]
+}
+EXIT: 0
+
+## Frozen integrity and relative links
+COMMAND: ${CLEAN_ENV}/bin/python -I -B ${PACKAGE}/scripts/check_package.py
+PASS: 35 frozen file hashes; 138 manuscript labels; 85 portable links.
+EXIT: 0
+
+## Verification method unit tests
+COMMAND: ${CLEAN_ENV}/bin/python -I -B -m unittest discover -s ${PACKAGE}/tests -v
+test_coefficient_conjugate_product (test_verification_methods.VerificationMethods.test_coefficient_conjugate_product) ... ok
+test_degree_counts_include_q_weight_two (test_verification_methods.VerificationMethods.test_degree_counts_include_q_weight_two) ... ok
+test_entropy_changes_when_bulk_frame_coefficient_is_changed (test_verification_methods.VerificationMethods.test_entropy_changes_when_bulk_frame_coefficient_is_changed) ... ok
+test_epsilon2_zero_alone_does_not_give_relaxation_factor (test_verification_methods.VerificationMethods.test_epsilon2_zero_alone_does_not_give_relaxation_factor) ... ok
+test_examples_use_no_binary_floats (test_verification_methods.VerificationMethods.test_examples_use_no_binary_floats) ... ok
+test_invalid_physical_transport_saves_failure_evidence (test_verification_methods.VerificationMethods.test_invalid_physical_transport_saves_failure_evidence) ... ok
+test_known_strict_real_polynomials (test_verification_methods.VerificationMethods.test_known_strict_real_polynomials) ... ok
+test_marginal_shift (test_verification_methods.VerificationMethods.test_marginal_shift) ... ok
+test_output_cannot_overwrite_frozen_reference (test_verification_methods.VerificationMethods.test_output_cannot_overwrite_frozen_reference) ... ok
+test_standard_double_telegrapher_cannot_match_neutral_ideal_term (test_verification_methods.VerificationMethods.test_standard_double_telegrapher_cannot_match_neutral_ideal_term) ... ok
+test_wrong_factor_remainder_is_rejected (test_verification_methods.VerificationMethods.test_wrong_factor_remainder_is_rejected) ... ok
+test_zero_minors_do_not_prove_stability (test_verification_methods.VerificationMethods.test_zero_minors_do_not_prove_stability) ... ok
+test_zero_remainder_does_not_fix_normalization (test_verification_methods.VerificationMethods.test_zero_remainder_does_not_fix_normalization) ... ok
+test_zero_transport_changes_degree (test_verification_methods.VerificationMethods.test_zero_transport_changes_degree) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.370s
+
+OK
+EXIT: 0
+
+## Exact calculations from extracted archive
+COMMAND: ${CLEAN_ENV}/bin/python -I -B ${PACKAGE}/scripts/verify_protocol.py --output ${PACKAGE}/generated/isolated-run
+PASS: 79 exact residual checks and 49 exact requirements.
+Saved three rational examples with 80-digit roots and absolute/scaled residuals.
+Numerical samples are diagnostics; analytic universal obligations remain separately scoped.
+Output: ${PACKAGE}/generated/isolated-run
+EXIT: 0
+
+## Reference comparison and residuals
+COMMAND: ${CLEAN_ENV}/bin/python -I -B ${PACKAGE}/scripts/compare_reference.py ${PACKAGE}/generated/isolated-run
+PASS: exact reference data match; root multiplicities and 80-digit residual checks pass.
+This is reproducibility of finite diagnostics, not a universal stability proof.
+EXIT: 0
+
+## Create a new study from templates
+COMMAND: ${CLEAN_ENV}/bin/python -I -B ${PACKAGE}/scripts/new_study.py smoke-study-v1
+Created study: ${PACKAGE}/generated/studies/smoke-study-v1
+Fill the specification and derive original equations before proposing frames.
+EXIT: 0
+
+## Frozen files unchanged after execution
+COMMAND: ${CLEAN_ENV}/bin/python -I -B ${PACKAGE}/scripts/check_package.py
+PASS: 35 frozen file hashes; 138 manuscript labels; 85 portable links.
+EXIT: 0
