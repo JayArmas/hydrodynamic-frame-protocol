@@ -1,0 +1,32 @@
+{
+  "study_id": "REPLACE",
+  "claims": [
+    {
+      "claim_id": "REPLACE.boost_stability",
+      "statement": "All physical roots obey Re(s)<=0 on the stated domain",
+      "status": "unresolved_gap",
+      "quantifiers": [
+        "all admissible states",
+        "all real laboratory momenta including zero",
+        "all finite boosts",
+        "all propagation directions"
+      ],
+      "assumptions": [],
+      "depends_on": [
+        "original_matrix",
+        "entropy_matching",
+        "rest_root_count"
+      ],
+      "source_hashes": {},
+      "analytic_proof": null,
+      "exact_checks": [],
+      "diagnostics": [],
+      "boundary_coverage": [],
+      "next_required_calculation": "Derive actual laboratory gaps; exclude imaginary-axis crossings and roots entering through infinity.",
+      "excluded_claims": [
+        "nonlinear stability",
+        "Sobolev well-posedness"
+      ]
+    }
+  ]
+}
