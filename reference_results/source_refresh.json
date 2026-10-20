@@ -1,0 +1,6 @@
+{
+  "initial_source_sha256": "bbd89e9ce45a5a05145368dd699729fa88f7ae2ea9136c2d40b2819f56aca259",
+  "final_source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+  "observed_changes": "Title font specification and author email were added to the parent manuscript during packaging. No mathematical change in the observed diff.",
+  "action": "Updated only this supplementary package snapshot and source-label view. The parent manuscript was read, not written."
+}
