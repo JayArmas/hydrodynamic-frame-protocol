@@ -1,0 +1,82 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "installed": [
+    [
+      "mpmath",
+      "1.3.0"
+    ],
+    [
+      "pip",
+      "25.0.1"
+    ],
+    [
+      "sympy",
+      "1.14.0"
+    ]
+  ],
+  "sympy_file": "${CLEAN_ENV}/lib/python3.12/site-packages/sympy/__init__.py",
+  "mpmath_file": "${CLEAN_ENV}/lib/python3.12/site-packages/mpmath/__init__.py",
+  "sys_path": [
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+    "/Users/jacomearmas/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+    "${CLEAN_ENV}/lib/python3.12/site-packages"
+  ],
+  "isolated_mode": true,
+  "system_site_packages": false,
+  "user_site_enabled": false,
+  "working_directory": "unrelated to package and original project",
+  "dependency_install": "offline from downloaded wheel files, enforcing requirements-lock.txt hashes",
+  "tested_script_sha256": "df8d8c5662590667db5a2ac662a168cdff4105a5f02647c2a436f98a5ae70193",
+  "tested_manuscript_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+  "runs": [
+    {
+      "label": "Create environment without system packages",
+      "returncode": 0,
+      "elapsed_seconds": 1.27
+    },
+    {
+      "label": "Install locked universal wheels",
+      "returncode": 0,
+      "elapsed_seconds": 3.615
+    },
+    {
+      "label": "Read isolated dependency inventory",
+      "returncode": 0,
+      "elapsed_seconds": 0.174
+    },
+    {
+      "label": "Frozen integrity and relative links",
+      "returncode": 0,
+      "elapsed_seconds": 0.043
+    },
+    {
+      "label": "Verification method unit tests",
+      "returncode": 0,
+      "elapsed_seconds": 1.567
+    },
+    {
+      "label": "Exact calculations from extracted archive",
+      "returncode": 0,
+      "elapsed_seconds": 1.704
+    },
+    {
+      "label": "Reference comparison and residuals",
+      "returncode": 0,
+      "elapsed_seconds": 0.03
+    },
+    {
+      "label": "Create a new study from templates",
+      "returncode": 0,
+      "elapsed_seconds": 0.029
+    },
+    {
+      "label": "Frozen files unchanged after execution",
+      "returncode": 0,
+      "elapsed_seconds": 0.039
+    }
+  ],
+  "paths_in_logs": "Temporary absolute paths are replaced with explicit placeholders."
+}
