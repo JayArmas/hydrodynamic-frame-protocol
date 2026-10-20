@@ -1,0 +1,386 @@
+{
+  "package_version": "1.0.0",
+  "scope": "Selected independently reproduced identities; analytic conditional proofs reconstructed in the protocol; explicit remaining gaps.",
+  "claims": [
+    {
+      "claim_id": "I1",
+      "status": "established_identity",
+      "statement": "Original neutral determinant, quartic RH reduction, specified relaxation-times-cubic factor and the narrow two-standard-telegrapher obstruction.",
+      "assumptions": [
+        "w>0",
+        "0<x<1",
+        "division leading coefficients nonzero where used"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-5-reduce-inequalities-and-construct-coefficients",
+      "exact_checks": [
+        "neutral_original_determinant",
+        "RH_delta2",
+        "RH_delta3",
+        "RH_delta4",
+        "neutral_relaxation_quotient",
+        "neutral_relaxation_division_remainder",
+        "neutral_constant_q_obstruction"
+      ],
+      "excluded_claims": [
+        "All possible quadratic factorizations are excluded"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "I2",
+      "status": "established_identity",
+      "statement": "Charged row, original determinant normalization, quotient and remainder, entropy compensation.",
+      "assumptions": [
+        "Regular thermodynamic chart",
+        "F=T^2 N",
+        "Xi=T Delta_J x/w>0"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-6-derive-autonomous-fluctuations-and-coefficient-maps",
+      "exact_checks": [
+        "charge_row_0",
+        "charge_row_1",
+        "charge_row_2",
+        "charged_original_determinant",
+        "charged_telegrapher_quotient",
+        "charged_bulk",
+        "charged_conduction",
+        "charged_vector",
+        "auxiliary_bulk_shift"
+      ],
+      "excluded_claims": [
+        "Any analogous map in another system",
+        "Global EOS existence for arbitrary chart parameters"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "I3",
+      "status": "established_identity",
+      "statement": "Original charged laboratory-zero-momentum gap product, sound imaginary-axis identity, and all-angle characteristic equation.",
+      "assumptions": [
+        "Simultaneous boost of s and q",
+        "|v|<1",
+        "Homogeneous isotropic background"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-8-prove-boosts-and-every-propagation-direction",
+      "exact_checks": [
+        "direct_neutral_lab_gap",
+        "original_charged_lab_gap_product",
+        "imaginary_axis_identity",
+        "all_angle_characteristic_equation",
+        "luminal_characteristic_endpoint"
+      ],
+      "excluded_claims": [
+        "An independent moving-background tensor derivation by this executable",
+        "Universal sign proof from algebra alone"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "I4",
+      "status": "established_identity",
+      "statement": "Three rational EOS examples, finite conformal coefficients, original degree reductions and full determinant degree counts.",
+      "assumptions": [
+        "Exact example inputs",
+        "Nondegenerate chart for generic degree counts",
+        "T0=1 in the example driver"
+      ],
+      "analytic_proof": "examples/inputs.json",
+      "exact_checks": [
+        "benchmark_sound_speeds",
+        "benchmark_shear_speed",
+        "benchmark_charge_speed",
+        "zero_transport_original_Euler",
+        "eta_zero_original_cubic",
+        "Gamma_zero_F3_retained_gap"
+      ],
+      "excluded_claims": [
+        "Finite examples certify arbitrary states",
+        "Numerical roots constitute analytic proof"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "I5",
+      "status": "established_identity",
+      "statement": "Three independent symbolic coefficient shifts preserve original charged determinant, charge row and entropy invariants.",
+      "assumptions": [
+        "Fixed charge-row ansatz",
+        "Finite thermodynamic chart",
+        "Shifts and associated current changes exactly as paper eq:free-shifts"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-6-derive-autonomous-fluctuations-and-coefficient-maps",
+      "exact_checks": [
+        "three_function_original_determinant",
+        "three_function_original_remainder",
+        "three_function_entropy_bulk",
+        "three_function_entropy_conduction",
+        "three_function_entropy_vector"
+      ],
+      "excluded_claims": [
+        "Equal eigenvectors",
+        "Classification of all factorized charged determinants"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "C1",
+      "status": "conditional_result",
+      "statement": "Neutral quartic certificate gives strict rest stability for every q>0 with separate k=0 gaps.",
+      "assumptions": [
+        "w>0",
+        "0<x<1",
+        "Gamma>0",
+        "eps1,theta1>0",
+        "Phi>=0",
+        "L>=0",
+        "characteristic y in [0,1]"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-5-reduce-inequalities-and-construct-coefficients",
+      "exact_checks": [
+        "RH_delta2",
+        "RH_delta3",
+        "RH_delta4"
+      ],
+      "excluded_claims": [
+        "All six family inequalities automatically proved by the executable"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [
+        "I1"
+      ],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "C2",
+      "status": "conditional_result",
+      "statement": "Direct gap, no-crossing and no-infinity argument transfers C1 to every finite boost and real momentum for the paper polynomial structure.",
+      "assumptions": [
+        "C1",
+        "Causal principal bounds",
+        "Nonzero leading coefficient along each closed finite boost interval"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-8-prove-boosts-and-every-propagation-direction",
+      "exact_checks": [
+        "imaginary_axis_identity",
+        "original_charged_lab_gap_product"
+      ],
+      "excluded_claims": [
+        "Covariance alone proves boost stability",
+        "A new anisotropic or constrained system is covered"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [
+        "C1",
+        "I3"
+      ],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "C3",
+      "status": "conditional_result",
+      "statement": "Charged map preserves prescribed physical transport and transfers the applicable neutral spectral proof after auxiliary-bulk compensation.",
+      "assumptions": [
+        "I2",
+        "C1 and C2 for compensated seed",
+        "tau_q>=Dq>0 in positive branch",
+        "Separate boundary reductions"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-6-derive-autonomous-fluctuations-and-coefficient-maps",
+      "exact_checks": [
+        "charged_original_determinant",
+        "auxiliary_bulk_shift"
+      ],
+      "excluded_claims": [
+        "Any multi-charge transport matrix automatically diagonalizes"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [
+        "I2",
+        "C1",
+        "C2"
+      ],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "C4",
+      "status": "conditional_result",
+      "statement": "I5 preserves spectral roots, gaps and speeds under complex boost substitution; prior spectral proofs transfer.",
+      "assumptions": [
+        "I5",
+        "Proofs already established for the fixed representative"
+      ],
+      "analytic_proof": "docs/RESEARCH_PROTOCOL.md#stage-6-derive-autonomous-fluctuations-and-coefficient-maps",
+      "exact_checks": [
+        "three_function_original_determinant"
+      ],
+      "excluded_claims": [
+        "Equal eigenspaces",
+        "Unchanged nonlinear PDE properties"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [
+        "I5",
+        "C2"
+      ],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "C5",
+      "status": "conditional_result",
+      "statement": "The explicitly reduced zero-transport factors have stable spectra and causal characteristics at every finite boost.",
+      "assumptions": [
+        "Finite regular design parameters",
+        "0<x<1",
+        "Reduced cubic sound speed <=1",
+        "Boundary-specific coefficients as stated"
+      ],
+      "analytic_proof": "docs/BOUNDARY_ANALYSIS.md",
+      "exact_checks": [
+        "eta_zero_original_cubic",
+        "eta_zero_F3_original_cubic",
+        "Gamma_zero_F3_retained_gap",
+        "zero_diffusion_retained_relaxation"
+      ],
+      "excluded_claims": [
+        "Uniform bounded evolution at all repeated roots",
+        "Singular susceptibility faces"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [
+        "I4"
+      ],
+      "diagnostics": [],
+      "next_required_calculation": ""
+    },
+    {
+      "claim_id": "G1",
+      "status": "unresolved_gap",
+      "statement": "The stronger local-quadratic ansatz exclusion in the manuscript is not independently reproduced by this package.",
+      "assumptions": [
+        "Must define complete ansatz and conformal approach domain"
+      ],
+      "analytic_proof": null,
+      "exact_checks": [],
+      "excluded_claims": [
+        "Using this unverified classification to discard every quadratic factor"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": "Derive and save an exhaustive elimination proof for the precisely stated quadratic ansatz."
+    },
+    {
+      "claim_id": "G2",
+      "status": "unresolved_gap",
+      "statement": "Every proposed new system needs its own tensor/constraint derivation, sector inventory, directional and boosted proofs.",
+      "assumptions": [
+        "No application selected"
+      ],
+      "analytic_proof": null,
+      "exact_checks": [],
+      "excluded_claims": [
+        "Automatic certification of MHD, superfluids, multiple charges or anisotropy"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": "Complete protocol Stages 1-3 for a specified application."
+    },
+    {
+      "claim_id": "Q1",
+      "status": "conjecture",
+      "statement": "Autonomous fluctuations or triangular blocks may make other systems tractable.",
+      "assumptions": [
+        "To be tested by coefficient and entropy matching"
+      ],
+      "analytic_proof": null,
+      "exact_checks": [],
+      "excluded_claims": [
+        "Universal existence of a telegrapher or neutral-to-new-system map"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": "Solve a transport-compatible row or block closure problem in the selected system."
+    },
+    {
+      "claim_id": "G3",
+      "status": "unresolved_gap",
+      "statement": "Bounded marginal evolution, strong hyperbolicity, nonlinear causality and well-posedness need separately established hypotheses and proofs.",
+      "assumptions": [
+        "Specify the intended PDE claim and function space"
+      ],
+      "analytic_proof": null,
+      "exact_checks": [],
+      "excluded_claims": [
+        "Spectral factorization is a nonlinear theorem"
+      ],
+      "source_sha256": "fcc1dcc2bb2ef0555ce1248dbdcafbe37331ea2763ec9c4f09c55dad4e08a4d8",
+      "quantifiers": [
+        "Exactly the domain and scope in the linked proof; finite diagnostics have no universal quantifier."
+      ],
+      "depends_on": [],
+      "diagnostics": [],
+      "next_required_calculation": "Derive a compatible evolution reduction, eigenvector/energy estimates and exact theorem hypothesis mapping."
+    }
+  ]
+}
